@@ -12,6 +12,10 @@
 #include <cstdlib>
 #include <cstring>
 
+bool HAVE_ZLIB = false;
+bool HAVE_BZLIB = false;
+bool HAVE_XZLIB = false;
+
 #ifdef HAVE_ZLIB
 #include <zlib.h>
 #endif
