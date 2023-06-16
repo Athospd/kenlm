@@ -12,15 +12,15 @@
 #include <cstdlib>
 #include <cstring>
 
-#ifdef HAVE_ZLIB
+#ifdef false //HAVE_ZLIB
 #include <zlib.h>
 #endif
 
-#ifdef HAVE_BZLIB
+#ifdef false //HAVE_BZLIB
 #include <bzlib.h>
 #endif
 
-#ifdef HAVE_XZLIB
+#ifdef false //HAVE_XZLIB
 #include <lzma.h>
 #endif
 
