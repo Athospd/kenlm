@@ -20,7 +20,7 @@ set(KENLM_UTIL_SOURCE
 		murmur_hash.cc
 		parallel_read.cc
 		pool.cc
-		# read_compressed.cc
+		read_compressed.cc
 		scoped.cc
     spaces.cc
 		string_piece.cc
