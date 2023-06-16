@@ -12,17 +12,20 @@
 #include <cstdlib>
 #include <cstring>
 
-#ifdef HAVE_ZLIB
 #include <zlib.h>
-#endif
-
-#ifdef HAVE_BZLIB
 #include <bzlib.h>
-#endif
-
-#ifdef HAVE_XZLIB
 #include <lzma.h>
-#endif
+// #ifdef HAVE_ZLIB
+// #include <zlib.h>
+// #endif
+//
+// #ifdef HAVE_BZLIB
+// #include <bzlib.h>
+// #endif
+//
+// #ifdef HAVE_XZLIB
+// #include <lzma.h>
+// #endif
 
 namespace util {
 
