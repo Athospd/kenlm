@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.1)
 
 if (WIN32)
-    set(Boost_USE_STATIC_LIBS OFF)
+    set(Boost_USE_STATIC_LIBS ON)
     # The auto-linking feature has problems with USE_STATIC_LIBS off, so we use
     # BOOST_ALL_NO_LIB to turn it off.
     # Several boost libraries headers aren't configured correctly if
