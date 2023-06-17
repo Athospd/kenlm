@@ -7,7 +7,7 @@ if (WIN32)
     # Several boost libraries headers aren't configured correctly if
     # USE_STATIC_LIBS is off, so we explicitly say they are dynamic with the
     # remaining definitions.
-    add_definitions(-DBOOST_ALL_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_THREAD_DYN_LINK)
+    # add_definitions(-DBOOST_ALL_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_THREAD_DYN_LINK)
 endif( )
 
 # Define a single cmake project
