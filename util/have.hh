@@ -11,3 +11,7 @@
 #endif
 
 #endif // UTIL_HAVE_H
+
+#define HAVE_BZLIB
+#define HAVE_ZLIB
+#define HAVE_XZLIB
