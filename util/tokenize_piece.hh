@@ -96,8 +96,14 @@ class AnyCharacterLast {
     StringPiece chars_;
 };
 
-template <class Find, bool SkipEmpty = false> class TokenIter : public std::iterator<std::forward_iterator_tag, const StringPiece, std::ptrdiff_t, const StringPiece *, const StringPiece &> {
+template <class Find, bool SkipEmpty = false> class TokenIter {
   public:
+    using value_type = const StringPiece;
+    using pointer = const StringPiece*;
+    using reference = const StringPiece&;
+    using difference_type = std::ptrdiff_t;
+    using iterator_category = std::forward_iterator_tag;
+
     TokenIter() {}
 
     template <class Construct> TokenIter(const StringPiece &str, const Construct &construct) : after_(str), finder_(construct) {
